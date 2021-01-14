@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+}
+
+p {
+  font-size: larger;
+}
+
+.navbar h1,
+.navbar a:hover {
+  color: #f1356d;
+}
+
+.content {
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+.content h2 {
+  font-size: xx-large;
+}
+
+.navbar {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.navbar .links {
+  margin-left: auto;
+}
+
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+
+.about p {
+  padding-top: 1rem;
+}
+
+/* blog previews / list */
+.blog-preview {
+  padding: 10px 0;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+
+.blog-preview h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 8px;
+}
+
+.blog-preview:hover {
+  -webkit-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+/*# sourceMappingURL=index.css.map */
