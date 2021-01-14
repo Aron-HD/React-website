@@ -12,6 +12,8 @@
 /build
 
 # misc
+notes.md
+original.css
 /src/copy
 .eslintcache
 .DS_Store
