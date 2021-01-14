@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+$red: #f1356d;
+
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+}
+p {
+  font-size: larger;
+}
+.navbar {
+  h1,
+  a:hover {
+    color: $red;
+  }
+}
+.content {
+  max-width: 1000px;
+  margin: 40px auto;
+  // padding: 20px;
+  h2 {
+    font-size: xx-large;
+  }
+}
