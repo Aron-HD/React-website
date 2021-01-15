@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import Home from "./Home";
 import Create from "./Create";
 import About from "./About";
+import Contact from "./Contact";
 
 function App() {
   return (
@@ -11,15 +12,10 @@ function App() {
         <Navbar />
         <div className="content">
           <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route path="/about">
-              <About />
-            </Route>
-            <Route path="/create">
-              <Create />
-            </Route>
+            <Route exact path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/contact" component={Contact} />
+            <Route path="/create" component={Create} />
           </Switch>
         </div>
       </div>
