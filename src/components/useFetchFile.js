@@ -23,7 +23,7 @@ const useFetchFile = (file) => {
           setIsPending(false);
           setError(err.message);
         });
-    }, 1000);
+    }, 200);
   }, [file]);
   return { data, isPending, error };
 };
