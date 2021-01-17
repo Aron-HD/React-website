@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
 
-$red: #f1356d;
+$primary: #f1356d;
+$secondary: rgb(255, 98, 50);
 
 /* base styles */
 * {
@@ -11,10 +12,16 @@ $red: #f1356d;
 p {
   font-size: larger;
 }
+a {
+  font-weight: 400;
+  text-decoration: none;
+}
+a:hover {
+  color: $secondary;
+}
 .navbar {
-  h1,
-  a:hover {
-    color: $red;
+  h1 {
+    color: $primary;
   }
 }
 .content {
