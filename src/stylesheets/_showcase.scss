@@ -1,18 +1,32 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
 
 .showcase {
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  transition: 0.2s;
+  z-index: 2;
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    color: #fff;
   }
   header {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 40px 100px;
+    // padding: 20px 0px;
     z-index: 1000;
     display: flex;
     justify-content: space-between;
@@ -23,24 +37,7 @@
       cursor: pointer;
     }
   }
-  .showcase {
-    position: absolute;
-    right: 0;
-    width: 100%;
-    min-height: 100vh;
-    padding: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #111;
-    transition: 0.2s;
-    z-index: 2;
-  }
-  .showcase.active {
-    right: 300px;
-  }
-
-  .showcase video {
+  video {
     position: absolute;
     top: 0;
     left: 0;
@@ -58,9 +55,13 @@
     background: #03a9f4;
     mix-blend-mode: overlay;
   }
+  .container {
+    padding-left: 2rem;
+  }
   .text {
     position: relative;
     z-index: 10;
+    // padding-left: 2rem;
     h2 {
       font-size: 5em;
       font-weight: 800;
@@ -99,9 +100,9 @@
       }
     }
   }
-
   // Social icons
   .social {
+    color: #fff;
     position: absolute;
     z-index: 10;
     bottom: 20px;
@@ -122,60 +123,16 @@
       }
     }
   }
-  // hamburger toggle
-  .toggle {
-    position: relative;
-    width: 60px;
-    height: 60px;
-    background: url(https://i.ibb.co/HrfVRcx/menu.png);
-    background-repeat: no-repeat;
-    background-size: 30px;
-    background-position: center;
-    cursor: pointer;
-  }
-  .toggle.active {
-    background: url(https://i.ibb.co/rt3HybH/close.png);
-    background-repeat: no-repeat;
-    background-size: 25px;
-    background-position: center;
-    cursor: pointer;
-  }
-  .menu {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 300px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    ul {
-      position: relative;
-      li {
-        list-style: none;
-        a {
-          text-decoration: none;
-          font-size: 24px;
-          color: #111;
-          :hover {
-            color: #03a9f4;
-          }
-        }
-      }
+  @media (max-width: 991px) {
+    .showcase,
+    .showcase header {
+      padding: 40px;
     }
-  }
-}
-
-// Media
-@media (max-width: 991px) {
-  .showcase,
-  .showcase header {
-    padding: 40px;
-  }
-  .text h2 {
-    font-size: 3em;
-  }
-  .text h3 {
-    font-size: 2em;
+    .text h2 {
+      font-size: 3em;
+    }
+    .text h3 {
+      font-size: 2em;
+    }
   }
 }

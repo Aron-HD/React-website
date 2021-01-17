@@ -6,6 +6,7 @@ import Create from "./Create";
 import About from "./About";
 import Contact from "./Contact";
 import Showcase from "./Showcase/Showcase";
+import NavAlt from "./Showcase/NavAlt";
 
 function App() {
   return (
@@ -13,16 +14,16 @@ function App() {
       <Fragment className="App">
         <Switch>
           <Route exact path="/" component={Showcase} />
-          <Navbar />
+          <NavAlt />
         </Switch>
-        <Fragment className="content">
+        <div className="content">
           <Switch>
             <Route path="/blogs" component={Blogs} />
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
             <Route path="/create" component={Create} />
           </Switch>
-        </Fragment>
+        </div>
       </Fragment>
     </Router>
   );

@@ -1,23 +1,15 @@
-import { Fragment, useState } from "react";
+import { Fragment } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import NavAlt from "./NavAlt";
 
-const showcase = () => {
-  const [open, setOpen] = useState(false);
-  // const menuToggle = document.querySelector(".toggle");
-  // const showcase = document.querySelector(".showcase");
-
-  // if (menuToggle) {
-  //   menuToggle.addEventListener("click", () => {
-  //     menuToggle.classList.toggle("active");
-  //     showcase.classList.toggle("active");
-  //   });
-  // }
-
+const Showcase = () => {
   return (
     <Fragment>
       <section className="showcase">
         <header>
-          <h2 className="logo">Aron Hayes Davidson</h2>
-          <div className="toggle"></div>
+          <NavAlt />
         </header>
         <video
           src="https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880"
@@ -26,35 +18,49 @@ const showcase = () => {
           autoplay
         />
         <div className="overlay" />
-        <div className="text">
-          <h2>Never Stop</h2>
-          <h3>Exploring The World</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod.
-          </p>
-          <a href="#">Projects</a>
+        <div className="container">
+          <div className="text">
+            <h2>Never Stop</h2>
+            <h3>Exploring The World</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod.
+            </p>
+            <a href="/projects">Projects</a>
+          </div>
+          <ul className="social">
+            <li>
+              <a href="mailto:aronhdavidson@gmail.com">
+                <FontAwesomeIcon
+                  icon={faEnvelope}
+                  style={{ color: "#fff" }}
+                  size="3x"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/aron-hd">
+                <FontAwesomeIcon
+                  icon={faGithub}
+                  style={{ color: "#fff" }}
+                  size="3x"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/aron-hd/">
+                <FontAwesomeIcon
+                  icon={faLinkedinIn}
+                  style={{ color: "#fff" }}
+                  size="3x"
+                />
+              </a>
+            </li>
+          </ul>
         </div>
-        <ul className="social">
-          <li>
-            <a href="#">
-              <img src="https://i.ibb.co/x7P24fL/facebook.png" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="https://i.ibb.co/Wnxq2Nq/twitter.png" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="https://i.ibb.co/ySwtH4B/instagram.png" />
-            </a>
-          </li>
-        </ul>
       </section>
     </Fragment>
   );
 };
 
-export default showcase;
+export default Showcase;
