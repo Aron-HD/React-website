@@ -7,14 +7,17 @@ const Navbar = () => {
         <h1>Aron Hayes Davidson</h1>
       </Link>
       <div className="links">
-        <Link to="/about" className="item">
-          About
+        <Link to="/blogs" className="item">
+          Blogs
+        </Link>
+        <Link to="/create" className="item">
+          New blog
         </Link>
         <Link to="/contact" className="item">
           Contact
         </Link>
-        <Link to="/create" className="item">
-          New blog
+        <Link to="/about" className="item">
+          About
         </Link>
       </div>
     </nav>
