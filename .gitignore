@@ -25,3 +25,7 @@ original.css
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# content
+/src/images
+/src/video

@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { Link } from "react-router-dom";
 import NavAlt from "./NavAlt";
-import Video from "../../images/showcase_video.mp4";
+import Video from "../../video/showcase_video.mp4";
 
 const Showcase = () => {
   return (
