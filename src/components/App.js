@@ -8,6 +8,7 @@ import Contact from "./Contact";
 import Showcase from "./Showcase/Showcase";
 import NavAlt from "./Showcase/NavAlt";
 import BlogDetails from "./Blog/BlogDetails";
+import NotFound from "./NotFound";
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
             <Route path="/contact" component={Contact} />
             <Route path="/create" component={Create} />
             <Route path="/blogs/:id" component={BlogDetails} />
+            {/* must be at the bottom */}
+            <Route path="*" component={NotFound} />{" "}
           </Switch>
         </div>
       </Fragment>
