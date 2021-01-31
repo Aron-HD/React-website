@@ -232,5 +232,10 @@ nav .logo {
   .showcase .text h3 {
     font-size: 2em;
   }
+  .showcase div ul {
+    padding: 40px;
+    -webkit-padding-start: 40px;
+            padding-inline-start: 40px;
+  }
 }
 /*# sourceMappingURL=index.css.map */

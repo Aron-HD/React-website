@@ -107,5 +107,11 @@
     .text h3 {
       font-size: 2em;
     }
+    div {
+      ul {
+        padding: 40px;
+        padding-inline-start: 40px;
+      }
+    }
   }
 }
