@@ -7,6 +7,7 @@ import About from "./About";
 import Contact from "./Contact";
 import Showcase from "./Showcase/Showcase";
 import NavAlt from "./Showcase/NavAlt";
+import BlogDetails from "./Blog/BlogDetails";
 
 function App() {
   return (
@@ -18,10 +19,11 @@ function App() {
         </Switch>
         <div className="content">
           <Switch>
-            <Route path="/blogs" component={Blogs} />
+            <Route exact path="/blogs" component={Blogs} />
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
             <Route path="/create" component={Create} />
+            <Route path="/blogs/:id" component={BlogDetails} />
           </Switch>
         </div>
       </Fragment>
