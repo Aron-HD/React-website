@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Fragment } from "react";
-import Navbar from "./Navbar";
+// import Navbar from "./Navbar";
 import Blogs from "./Blogs";
 import Create from "./Create";
 import About from "./About";
@@ -11,7 +11,7 @@ import NavAlt from "./Showcase/NavAlt";
 function App() {
   return (
     <Router>
-      <Fragment className="App">
+      <Fragment key="App">
         <Switch>
           <Route exact path="/" component={Showcase} />
           <NavAlt />
