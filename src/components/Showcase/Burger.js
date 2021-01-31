@@ -5,17 +5,17 @@ import Menu from "./Menu";
 const StyledBurger = styled.div`
   width: 2rem;
   height: 2rem;
-  position: fixed;
+  /* position: fixed; */
   top: 40px;
   right: 40px;
   z-index: 20;
   display: none;
 
-  @media (max-width: 768px) {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: column nowrap;
-  }
+  /* @media (max-width: 768px) { */
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  /* } */
 
   div {
     width: 2rem;
