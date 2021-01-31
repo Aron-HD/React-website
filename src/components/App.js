@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Fragment } from "react";
 // import Navbar from "./Navbar";
-import Blogs from "./Blogs";
-import Create from "./Create";
+import Blogs from "./Blog/Blogs";
+import Create from "./Blog/Create";
 import About from "./About";
 import Contact from "./Contact";
 import Showcase from "./Showcase/Showcase";

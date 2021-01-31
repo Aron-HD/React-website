@@ -1,6 +1,6 @@
 // import { useState, useEffect } from "react";
 import BlogList from "./BlogList";
-import useFetch from "./useFetch";
+import useFetch from "../useFetch";
 
 const Home = () => {
   // eslint-disable-next-line

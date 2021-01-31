@@ -64,6 +64,9 @@ const Menu = ({ open }) => {
         <li>
           <Link to="/blogs">Blogs</Link>
         </li>
+        <li>
+          <Link to="/create">New blog</Link>
+        </li>
       </ul>
       <Social />
     </StyledMenu>
