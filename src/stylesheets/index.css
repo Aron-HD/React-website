@@ -3,8 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
 * {
   margin: 0;
-  font-family: "Open Sans", sans-serif;
-  color: #333;
+  font-family: "Poppins", sans-serif;
 }
 
 p {
@@ -20,8 +19,13 @@ a:hover {
   color: #ff6232;
 }
 
-.navbar h1 {
+nav h1 {
   color: #f1356d;
+}
+
+nav .logo {
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .content {
@@ -126,7 +130,6 @@ a:hover {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
   color: #fff;
 }
 
@@ -145,12 +148,6 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.showcase header .logo {
-  color: #fff;
-  text-transform: uppercase;
-  cursor: pointer;
 }
 
 .showcase video {
@@ -186,7 +183,6 @@ a:hover {
 .showcase .text h2 {
   font-size: 5em;
   font-weight: 800;
-  color: #fff;
   line-height: 1em;
   text-transform: uppercase;
 }
@@ -194,14 +190,12 @@ a:hover {
 .showcase .text h3 {
   font-size: 4em;
   font-weight: 700;
-  color: #fff;
   line-height: 1em;
   text-transform: uppercase;
 }
 
 .showcase .text p {
   font-size: 1.1em;
-  color: #fff;
   margin: 20px 0;
   font-weight: 400;
   max-width: 700px;
@@ -222,44 +216,9 @@ a:hover {
   transition: 0.2s;
 }
 
-.showcase .text a :hover {
+.showcase .text a:hover {
+  color: #f1356d;
   letter-spacing: 3px;
-}
-
-.showcase .social {
-  color: #fff;
-  position: absolute;
-  z-index: 10;
-  bottom: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.showcase .social li {
-  list-style: none;
-}
-
-.showcase .social li a {
-  display: inline-block;
-  margin-right: 20px;
-  -webkit-filter: invert(1);
-          filter: invert(1);
-  -webkit-transform: scale(0.5);
-          transform: scale(0.5);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.showcase .social li a :hover {
-  -webkit-transform: scale(0.5) translateY(-15px);
-          transform: scale(0.5) translateY(-15px);
 }
 
 @media (max-width: 991px) {
