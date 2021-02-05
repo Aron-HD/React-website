@@ -1,17 +1,16 @@
-import Thumbnail from "./Thumbnail.js"; // Import the Thumbnail component
+import { Fragment } from "react";
+import { useState, useEffect } from "react";
+import Thumbnails from "./Thumbnails.js";
+import Technologies from "./Technologies";
+import useFetchFile from "../useFetchFile.js";
 
-const Projects = (props) => {
+const Projects = () => {
   return (
-    // Render a Thumbnail component
-    <div>
+    <Fragment>
       <h1>Projects</h1>
-      <Thumbnail
-        link="{ props.link }"
-        image="{ props.image }"
-        title="{ props.title }"
-        category="{ props.category }"
-      />
-    </div>
+      <Thumbnails />
+      <Technologies />
+    </Fragment>
   );
 };
 
