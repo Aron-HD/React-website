@@ -5,7 +5,6 @@ import useFetch from "../useFetch";
 const StyledBlog = styled.div`
   h2 {
     font-size: 20px;
-    color: red;
     margin-bottom: 10px;
   }
   div {
