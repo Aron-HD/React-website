@@ -9,6 +9,8 @@ import Showcase from "./Showcase/Showcase";
 import NavAlt from "./Showcase/NavAlt";
 import BlogDetails from "./Blog/BlogDetails";
 import NotFound from "./NotFound";
+import Projects from "./Projects/Projects";
+import ProjectDetails from "./Projects/ProjectDetails";
 
 function App() {
   return (
@@ -20,13 +22,15 @@ function App() {
         </Switch>
         <div className="content">
           <Switch>
-            <Route exact path="/blogs" component={Blogs} />
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
             <Route path="/create" component={Create} />
+            <Route exact path="/blogs" component={Blogs} />
             <Route path="/blogs/:id" component={BlogDetails} />
+            <Route exact path="/projects" component={Projects} />
+            <Route path="/projects/:title" component={ProjectDetails} />
             {/* must be at the bottom */}
-            <Route path="*" component={NotFound} />{" "}
+            <Route path="*" component={NotFound} />
           </Switch>
         </div>
       </Fragment>
