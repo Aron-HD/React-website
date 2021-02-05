@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import Markdown from "markdown-to-jsx";
-import technologiesMarkdown from "../copy/technologies.md";
-import useFetchFile from "./useFetchFile";
+import technologiesMarkdown from "../../copy/technologies.md";
+import useFetchFile from "../useFetchFile";
 
 const Technologies = () => {
   const { data: html, isPending, error } = useFetchFile(technologiesMarkdown);
