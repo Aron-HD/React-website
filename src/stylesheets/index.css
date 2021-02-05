@@ -13,14 +13,16 @@ p {
 a {
   font-weight: 400;
   text-decoration: none;
+  color: #111;
 }
 
 a:hover {
-  color: #ff6232;
+  color: #f8e325;
 }
 
-nav h1 {
-  color: #f1356d;
+h1,
+h2 {
+  color: #e61d0f;
 }
 
 nav .logo {
@@ -78,7 +80,7 @@ nav .logo {
 
 .blog-preview h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: #e61d0f;
   margin-bottom: 8px;
 }
 

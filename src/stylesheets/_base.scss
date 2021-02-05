@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
 
-$primary: #f1356d;
-$secondary: rgb(255, 98, 50);
+$primary: #e61d0f;
+$secondary: #f8e325;
 
 /* base styles */
 * {
@@ -15,14 +15,16 @@ p {
 a {
   font-weight: 400;
   text-decoration: none;
+  color: #111;
 }
 a:hover {
   color: $secondary;
 }
+h1,
+h2 {
+  color: $primary;
+}
 nav {
-  h1 {
-    color: $primary;
-  }
   .logo {
     text-transform: uppercase;
     cursor: pointer;
